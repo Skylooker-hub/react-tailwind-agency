@@ -1,6 +1,14 @@
 # React-Tailwind-Agency
 
-A reactive web.
+[![Buid](https://github.com/Skylooker-hub/react-tailwind-agency/actions/workflows/deploy.yaml/badge.svg)](https://github.com/Skylooker-hub/react-tailwind-agency/actions/workflows/deploy.yaml)
+
+A reactive web. [Preview](https://skylooker-hub.github.io/react-tailwind-agency/)
+
+## Build
+
+```shell
+npm run build # 记得改变base路径
+```
 
 ## Template
 
