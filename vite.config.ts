@@ -6,7 +6,11 @@ import legacy from '@vitejs/plugin-legacy';
 // https://vitejs.dev/config/
 
 const commonConfig: UserConfig = {
-  plugins: [react()],
+  plugins: [
+    react({
+      jsxRuntime: 'automatic',
+    }),
+  ],
   server: { open: true },
   resolve: {
     alias: {
@@ -33,6 +37,9 @@ export default defineConfig(({ command, mode }) => {
       // build 独有配置
       base: '/react-tailwind-agency',
       plugins: [
+        react({
+          jsxRuntime: 'automatic',
+        }),
         legacy({
           targets: ['ie >= 11'],
           additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
