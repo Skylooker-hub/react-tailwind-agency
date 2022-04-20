@@ -1,0 +1,28 @@
+name: Deploy to GitHub pages
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '/'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate webapp
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm install
+      - run: npm run build
+
+      - name: Init new repo in dist folder and commit generated files
+        run: |
+          cd dist
+          git config --global user.email "huangchenglin1997@qq.com"
+          git config --global user.name "Skylooker"
+          git init
+          git add .
+          git commit -m 'chore: Deploy to GitHub pages'
+          git push -f https://${{github.actor}}:${{github.token}}@github.com/${{ github.repository }}.git master:gh-pages
+          rm -rf .git
