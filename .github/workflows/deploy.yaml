@@ -1,9 +1,9 @@
 name: Deploy to GitHub pages
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
     paths:
-      - '/'
+      - '/src'
 jobs:
   build:
     runs-on: ubuntu-latest
