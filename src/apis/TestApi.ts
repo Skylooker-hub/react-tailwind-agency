@@ -12,7 +12,9 @@ interface TestAPISchema extends APISchema {
     request: {
       delay: number;
     };
-    response: {};
+    response: {
+      data: {};
+    };
   };
   post_delay: {
     request: {
