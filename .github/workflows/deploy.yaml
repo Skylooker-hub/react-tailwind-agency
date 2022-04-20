@@ -4,6 +4,7 @@ on:
     branches: [main, master]
     paths:
       - 'src/**'
+      - 'vite.config.ts'
 jobs:
   build:
     runs-on: ubuntu-latest

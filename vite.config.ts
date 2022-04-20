@@ -30,7 +30,8 @@ export default defineConfig(({ command, mode }) => {
   } else {
     // command === 'build'
     const buildConfig: UserConfig = {
-      // dev 独有配置
+      // build 独有配置
+      base: '/react-tailwind-agency',
       plugins: [
         legacy({
           targets: ['ie >= 11'],
