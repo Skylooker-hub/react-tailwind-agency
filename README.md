@@ -2,7 +2,7 @@
 
 [![Buid](https://github.com/Skylooker-hub/react-tailwind-agency/actions/workflows/deploy.yaml/badge.svg)](https://github.com/Skylooker-hub/react-tailwind-agency/actions/workflows/deploy.yaml)
 
-A reactive web. [Preview](https://skylooker-hub.github.io/react-tailwind-agency/)
+A responsive web. [Preview](https://skylooker-hub.github.io/react-tailwind-agency/)
 
 ## Build
 
